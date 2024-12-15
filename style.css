@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz@0,8..60;1,8..60&family=Tenor+Sans&display=swap');
+
+
+a{
+    color:black;    
+    text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+/* reset css */
+
+h1,h2,h3{
+    font-family: "Tenor Sans", sans-serif;
+}
+p{
+    font-family: "Source Serif 4", serif;
+}
+.text{
+    font-family: "Source Serif 4", serif;
+    font-size:40px;
+}
+.body__header {
+    display:flex;
+    justify-content: space-around; 
+    align-items: center;
+    border-bottom: 2px solid #8D8A8A; 
+    padding:30px 0;
+    margin-bottom: 150px;
+}
+.header__logo {
+    font-size:40px;
+    font-weight: 800;
+}
+.header__navigation {
+    display: flex;
+    gap: 150px;
+}
+.main__japan{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav__link {
+    font-size: 25px;
+    font-weight: 400;
+}
+.japan__picture{
+    width:50%;
+}
+.japan__tablet{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width:30%;
+}
+.tablet__title{
+    font-size: 36px;
+}
+.tablet__text{
+    font-size: 16px;
+    font-weight: 300;  
+}
+.latenews__recent2{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 0px;
+    width:100%;
+}
+.furniture__img, .furniture__p, .recent__house, .recent__helmut, .recent__bowlcut{
+    width: 100%;
+}
+.recent2__furniture{
+    width: 30%;
+}
+.intrnews__intresting1{
+    display: flex;
+    justify-content: space-between;
+    width:calc(100% - 60px);
+    gap:0;
+}
+.interesting1__wc{
+    width: 45%;
+}
+.center__image{
+    width:100%;
+}
+/* убрать gap в intr__intresting 2 и intrnews__intresting1 задать в %*/
+footer{
+    background-color: #b1afaf;
+    display:flex;
+    justify-content: space-around;
+    padding: 50px;
+    height:100px;
+}
+@media (max-width:1400px) {
+    .intrnews__intresting1{
+        flex-direction: column;
+        justify-content: center;
+        font-size: 30px;
+        width:calc(100% - 60px);
+        gap:40px;
+    }
+    .intr__intresting2{
+        flex-direction: column;
+        justify-content: center;
+        font-size: 30px;
+        width:calc(100% - 60px);
+        gap:40px;
+    }
+}
+@media (max-width:1100px) {
+    .body__header{
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+    .header__navigation{
+        justify-content: space-around;
+        gap: 0;
+        width: 100%;
+    }
+    .intrnews__intresting1{
+        flex-direction: column;
+        font-size: 30px;
+        width:100%;
+    }
+    .intr__intresting2{
+        flex-direction: column;
+        font-size: 30px;
+        width:100%;
+    }
+    .center{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width:900px) {
+    .intresting2__collection{
+        flex-direction: column;
+    }
+    .intr__intresting2{
+        flex-direction: column;
+    }
+    
+    .text{
+        font-size: 20px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media (max-width:800px) {
+    .latenews__recent2{
+        flex-wrap: wrap;
+        gap:20px;
+    }
+    .recent2__furniture{
+        width:300px;
+        font-size: 30px; 
+    }
+    .main__japan{
+        flex-direction: column;
+        gap:10px;
+    }
+    .japan__tablet{
+        justify-content: space-around;
+        width: 90%;
+        gap: 50px;
+    }
+    .japan__picture{
+        width:90%;
+    }
+    .tablet__text{
+        font-size: 30px;
+    }
+    .tablet__title{
+        text-align: center;
+    }
+    .text{
+        width:70%;
+    }
+
+}    
+
+@media (max-width:450px) {
+    .header__navigation{
+        flex-direction: column;
+    }
+}
+
